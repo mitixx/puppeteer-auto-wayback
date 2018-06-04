@@ -1,0 +1,1 @@
+auto.js and cantway.js working on node with puppeteer
