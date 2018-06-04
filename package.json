@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "npm": "5.6.0",
+    "puppeteer": "^1.4.0"
+  },
+  "scripts": {
+    "start": "node auto.js && node cantway.js"
+  }
+}
