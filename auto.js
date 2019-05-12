@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const clicom = requore('commander');
+const clicom = require('commander');
 
 (async () => {
   const browser = await puppeteer.launch({
