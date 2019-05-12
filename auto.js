@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const clicom = requore('commander');
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -16,3 +17,10 @@ const puppeteer = require('puppeteer');
 /*waitForNavの最大時間は30000ms
 それ以上になるとタイムアウトでエラーが発生し処理が行えない
 そのため、waitForへ引き渡し処理を実行させ終了させる*/
+
+/*clicom = commander(cliでのコマンド実行用引数)*/
+clicom
+	.usage('url')
+	.option('<value>','target-url',String,'error:target-url not set')
+	.parse(process.argv)
+console.log('competed!' + clicom.url)
